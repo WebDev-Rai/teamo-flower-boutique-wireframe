@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="A responsive design wireframe for Te'Amo Flower Boutique.">
+  <title>Te'Amo Flower Boutique — Website Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="prototype-bar">
+    <span>Client design wireframe</span>
+    <span>Sample wording, pricing, products, and images will be replaced</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Te'Amo Flower Boutique home">
+      <span class="wordmark-main">TE’AMO</span>
+      <span class="wordmark-sub">FLOWER BOUTIQUE</span>
+      <span class="wordmark-tag">Love on a Stem</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="shop.html">Shop</a>
+      <a href="#customize">Custom Bouquets</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="promotions.html">Promotions</a>
+      <a href="#programs">Programs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="Search products">
+        <span aria-hidden="true">⌕</span>
+      </button>
+      <button class="cart-button" id="cartButton" aria-label="Open shopping bag">
+        Bag <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+    <a href="shop.html">Shop</a>
+    <a href="#customize">Custom Bouquets</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="promotions.html">Promotions</a>
+    <a href="#programs">Programs</a>
+    <a href="#story">Our Story</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero-bouquet.webp" alt="Sample editorial bouquet image for layout review">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="script-kicker">Love, thoughtfully arranged</p>
+        <h1 id="hero-title">Flowers that feel as personal as the moment.</h1>
+        <p class="hero-copy">Custom bouquets, meaningful details, and local delivery—designed to make ordering feel just as lovely as receiving.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="shop.html">Shop bouquets</a>
+          <a class="text-link" href="#customize">Create something custom <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="content-note">Sample headline and description for layout only</p>
+      </div>
+      <div class="hero-proof">
+        <span>Local delivery</span>
+        <span>Made to order</span>
+        <span>48-hour notice</span>
+      </div>
+    </section>
+
+    <section class="category-section page-shell" aria-labelledby="category-heading">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="eyebrow">Find the right arrangement</p>
+          <h2 id="category-heading">Shop by collection</h2>
+        </div>
+        <a class="text-link" href="shop.html">View all bouquets <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card blush" href="shop.html"><span>Signature Roses</span><small>Client photo</small></a>
+        <a class="category-card cream" href="shop.html"><span>Mixed Bouquets</span><small>Client photo</small></a>
+        <a class="category-card wine" href="shop.html"><span>Seasonal Moments</span><small>Client photo</small></a>
+        <a class="category-card olive" href="#customize"><span>Custom Designs</span><small>Client photo</small></a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-heading">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div>
+            <p class="script-kicker">Made for the moment</p>
+            <h2 id="shop-heading">Featured bouquets</h2>
+            <p>These products and prices demonstrate how the catalog can work. They are not client-approved offerings.</p>
+          </div>
+          <div class="filter-row" aria-label="Filter sample products">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="roses">Roses</button>
+            <button class="filter-chip" data-filter="mixed">Mixed</button>
+            <button class="filter-chip" data-filter="seasonal">Seasonal</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card reveal" data-category="roses" data-tilt>
+            <button class="product-image product-one" data-product="Signature Rose Bouquet" aria-label="View Signature Rose Bouquet">
+              <img class="product-photo primary-photo" src="assets/sample-rose-bouquet.webp" alt="Sample blush rose bouquet image">
+              <img class="product-photo alternate-photo" src="assets/sample-mixed-bouquet.webp" alt="Sample bouquet detail image">
+              <span class="sample-label">Sample images · replace with Te’Amo photos</span>
+              <span class="quick-view">Quick view</span>
+            </button>
+            <div class="product-info">
+              <div><p class="product-name">Signature Rose Bouquet</p><p class="product-meta">Multiple stem counts & colors</p></div>
+              <p class="product-price">From $85</p>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="mixed" data-tilt>
+            <button class="product-image product-two" data-product="The Boutique Mix" aria-label="View The Boutique Mix">
+              <img class="product-photo primary-photo" src="assets/sample-mixed-bouquet.webp" alt="Sample mixed bouquet image">
+              <img class="product-photo alternate-photo" src="assets/sample-rose-bouquet.webp" alt="Sample rose bouquet detail image">
+              <span class="sample-label">Sample images · replace with Te’Amo photos</span>
+              <span class="quick-view">Quick view</span>
+            </button>
+            <div class="product-info">
+              <div><p class="product-name">The Boutique Mix</p><p class="product-meta">Florist-selected seasonal stems</p></div>
+              <p class="product-price">From $75</p>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="seasonal" data-tilt>
+            <button class="product-image product-three" data-product="The Celebration Bouquet" aria-label="View The Celebration Bouquet">
+              <img class="product-photo primary-photo image-crop-one" src="assets/sample-mixed-bouquet.webp" alt="Sample celebration bouquet image">
+              <img class="product-photo alternate-photo image-crop-two" src="assets/sample-rose-bouquet.webp" alt="Sample rose detail image">
+              <span class="sample-label">Sample images · replace with Te’Amo photos</span>
+              <span class="quick-view">Quick view</span>
+            </button>
+            <div class="product-info">
+              <div><p class="product-name">The Celebration Bouquet</p><p class="product-meta">Banner & personalized details</p></div>
+              <p class="product-price">From $110</p>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="roses" data-tilt>
+            <button class="product-image product-four" data-product="The Grand Gesture" aria-label="View The Grand Gesture">
+              <img class="product-photo primary-photo image-crop-two" src="assets/sample-rose-bouquet.webp" alt="Sample large rose arrangement image">
+              <img class="product-photo alternate-photo image-crop-one" src="assets/sample-mixed-bouquet.webp" alt="Sample mixed bouquet detail image">
+              <span class="sample-label">Sample images · replace with Te’Amo photos</span>
+              <span class="quick-view">Quick view</span>
+            </button>
+            <div class="product-info">
+              <div><p class="product-name">The Grand Gesture</p><p class="product-meta">Large-format rose arrangement</p></div>
+              <p class="product-price">From $225</p>
+            </div>
+          </article>
+        </div>
+        <div class="section-end-link"><a class="button button-outline" href="shop.html">Explore the full shop</a></div>
+      </div>
+    </section>
+
+    <section class="custom-section page-shell" id="customize" aria-labelledby="custom-heading">
+      <div class="custom-intro">
+        <p class="eyebrow">Simple, not overwhelming</p>
+        <h2 id="custom-heading">A guided custom bouquet experience</h2>
+        <p>Customers make one decision at a time. Available choices, photos, and prices will come directly from Te’Amo’s completed product catalog.</p>
+        <button class="button button-dark open-builder">Preview the bouquet builder</button>
+      </div>
+      <div class="steps-panel" aria-label="Bouquet ordering steps">
+        <div class="step"><span>01</span><div><h3>Choose a bouquet</h3><p>Select the flower style or collection.</p></div></div>
+        <div class="step"><span>02</span><div><h3>Make it personal</h3><p>Choose size, color, wrapping, message, and add-ons.</p></div></div>
+        <div class="step"><span>03</span><div><h3>Plan the handoff</h3><p>Select delivery or pickup and an available date.</p></div></div>
+        <div class="step"><span>04</span><div><h3>Review and pay</h3><p>Confirm every detail before secure checkout.</p></div></div>
+      </div>
+    </section>
+
+    <section class="programs-section" id="programs" aria-labelledby="program-heading">
+      <div class="page-shell">
+        <div class="section-heading light-heading">
+          <div><p class="script-kicker">More ways to send love</p><h2 id="program-heading">Te’Amo programs</h2></div>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <p class="program-number">01</p>
+            <h3>Bouquet Subscriptions</h3>
+            <p>Recurring flowers for partners, family, friends—or yourself. Frequency, eligible bouquets, and terms are pending client approval.</p>
+            <a href="#contact">Join the interest list <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="program-card featured-program">
+            <p class="program-number">02</p>
+            <h3>Secret Admirer</h3>
+            <p>A consent-first request process designed to protect privacy while helping customers make a thoughtful introduction.</p>
+            <span class="policy-badge">Launch requires approved safety policy</span>
+            <a href="#contact">Learn how it works <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="program-card">
+            <p class="program-number">03</p>
+            <h3>The Flower Bar</h3>
+            <p>A dedicated space for Te’Amo’s flower-bar offering once service details, availability, and booking rules are confirmed.</p>
+            <a href="#contact">Ask about the flower bar <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section page-shell" id="story" aria-labelledby="story-heading">
+      <div class="story-photo"><span>Founder or studio photo</span><small>Upload after authorization</small></div>
+      <div class="story-copy">
+        <p class="script-kicker">The heart behind the flowers</p>
+        <h2 id="story-heading">A boutique experience, even before there’s a storefront.</h2>
+        <p>This section will introduce the founder, explain why Te’Amo began, and help customers understand what makes each arrangement distinct.</p>
+        <blockquote>“Approved founder story or brand statement will appear here.”</blockquote>
+        <a class="text-link" href="#contact">Read the Te’Amo story <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="page-shell">
+        <div class="section-heading compact-heading">
+          <div><p class="eyebrow">Past work</p><h2 id="gallery-heading">The Te’Amo gallery</h2></div>
+          <div class="heading-links"><a class="text-link" href="gallery.html">View more work <span aria-hidden="true">→</span></a><a class="text-link" href="https://www.instagram.com/teamo_flowerboutique/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-tile tall"><span>Client photo 01</span></div>
+          <div class="gallery-tile"><span>Client photo 02</span></div>
+          <div class="gallery-tile"><span>Client photo 03</span></div>
+          <div class="gallery-tile wide"><span>Client photo 04</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" aria-labelledby="reviews-heading">
+      <div class="page-shell reviews-shell">
+        <div class="reviews-heading">
+          <div><p class="script-kicker">Love, delivered</p><h2 id="reviews-heading">Kind words from customers</h2></div>
+          <p>Approved reviews from Google, Facebook, Instagram, or direct customer feedback can appear here. Every quote and name will be confirmed before publishing.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-stars" aria-label="Five-star review">★★★★★</div>
+            <blockquote>“A client-approved review about the bouquet quality and the recipient’s reaction will appear here.”</blockquote>
+            <div class="review-source"><div><strong>Customer name</strong><span>Approved review source</span></div><span class="source-pill">Google</span></div>
+          </article>
+          <article class="review-card featured-review reveal">
+            <div class="review-stars" aria-label="Five-star review">★★★★★</div>
+            <blockquote>“This space can highlight a detailed review about Te’Amo’s service, communication, and thoughtful personal touches.”</blockquote>
+            <div class="review-source"><div><strong>Customer name</strong><span>Approved review source</span></div><span class="source-pill">Facebook</span></div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-stars" aria-label="Five-star review">★★★★★</div>
+            <blockquote>“A client-approved review about an easy ordering experience and dependable delivery will appear here.”</blockquote>
+            <div class="review-source"><div><strong>Customer name</strong><span>Approved review source</span></div><span class="source-pill">Direct</span></div>
+          </article>
+        </div>
+        <p class="reviews-note">Sample review placement only—not published customer testimonials.</p>
+      </div>
+    </section>
+
+    <section class="faq-section page-shell" aria-labelledby="faq-heading">
+      <div class="faq-intro"><p class="eyebrow">Before you order</p><h2 id="faq-heading">Helpful details</h2><p>Final answers will be populated from the approved delivery, pickup, substitution, cancellation, and care policies.</p></div>
+      <div class="accordion">
+        <details open><summary>How far in advance should I order?</summary><p>Current planning language uses a 48-hour notice period. Te’Amo will approve the final rule and any holiday exceptions.</p></details>
+        <details><summary>Can I request a specific flower color?</summary><p>Natural and tinted color availability, added costs, and substitution rules will appear here after approval.</p></details>
+        <details><summary>Do you offer delivery and pickup?</summary><p>Delivery area, fees, available windows, and a safe public pickup process are still being defined.</p></details>
+        <details><summary>What if a flower is unavailable?</summary><p>The approved substitution and customer-contact process will be clearly stated before launch.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="page-shell contact-grid">
+        <div>
+          <p class="script-kicker">Let’s make someone’s day</p>
+          <h2 id="contact-heading">Have a question before ordering?</h2>
+          <p>Customers can use this form for questions that are not answered in the catalog or policies. Final contact information will be added from the content worksheet.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>How can we help?<textarea name="message" rows="4" placeholder="Tell us what you’re looking for" required></textarea></label>
+          <button class="button button-dark" type="submit">Send inquiry</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-grid">
+      <div class="footer-brand"><p>TE’AMO</p><span>FLOWER BOUTIQUE</span><small>Love on a Stem</small></div>
+      <div><h3>Explore</h3><a href="shop.html">Shop</a><a href="gallery.html">Gallery</a><a href="promotions.html">Promotions</a><a href="#customize">Custom bouquets</a></div>
+      <div><h3>Help</h3><a href="#faq-heading">Ordering FAQs</a><a href="#contact">Contact</a><a href="#contact">Policies</a></div>
+      <div><h3>Stay connected</h3><p>Instagram and Facebook links will appear here.</p><p class="content-note">No home address will be published.</p></div>
+    </div>
+    <div class="page-shell footer-bottom"><span>© 2026 Te’Amo Flower Boutique</span><span>Design wireframe by Depot Town Digital</span></div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" hidden>
+    <div class="search-panel">
+      <button class="close-button" id="closeSearch" aria-label="Close search">×</button>
+      <label for="searchInput">Search the sample catalog</label>
+      <input id="searchInput" type="search" placeholder="Try “roses” or “celebration”">
+      <p id="searchResult">Enter a product or occasion.</p>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><h2 id="cartTitle">Your bag</h2><button class="close-button" id="closeCart" aria-label="Close bag">×</button></div>
+    <div class="cart-empty" id="cartEmpty"><p>Your bag is ready for something lovely.</p><a href="shop.html" class="text-link close-cart-link">Browse bouquets →</a></div>
+    <div id="cartItems"></div>
+    <div class="drawer-footer" id="cartFooter" hidden><div><span>Sample subtotal</span><strong id="cartSubtotal">$0</strong></div><button class="button button-dark" id="checkoutButton">Preview checkout</button><small>Taxes and delivery are calculated after client rules are approved.</small></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <dialog class="product-dialog" id="productDialog">
+    <button class="close-button dialog-close" id="closeProduct" aria-label="Close product details">×</button>
+    <div class="dialog-layout">
+      <div class="dialog-photo builder-visual">
+        <div class="builder-main-image"><img id="builderMainImage" src="assets/builder-classic.webp" alt="Sample classic bouquet option"></div>
+        <div class="builder-thumbnails" aria-label="Preview sample bouquet sizes">
+          <button type="button" class="builder-thumb active" data-size-value="85" data-image="assets/builder-classic.webp" data-alt="Sample classic bouquet option"><img src="assets/builder-classic.webp" alt=""><span>Classic</span></button>
+          <button type="button" class="builder-thumb" data-size-value="125" data-image="assets/builder-full.webp" data-alt="Sample full bouquet option"><img src="assets/builder-full.webp" alt=""><span>Full</span></button>
+          <button type="button" class="builder-thumb" data-size-value="185" data-image="assets/builder-grand.webp" data-alt="Sample grand bouquet option"><img src="assets/builder-grand.webp" alt=""><span>Grand</span></button>
+        </div>
+        <p class="builder-image-note">Sample imagery · final photos will show Te’Amo’s actual sizes and options</p>
+      </div>
+      <form class="product-form" id="productForm">
+        <p class="eyebrow">Sample product flow</p>
+        <h2 id="dialogProductName">Signature Rose Bouquet</h2>
+        <p class="dialog-description">A placeholder description will be replaced with approved product details.</p>
+        <div class="price-line">Starting at <strong id="dialogPrice">$85</strong></div>
+        <fieldset><legend>1. Bouquet size</legend><div class="choice-grid"><label><input type="radio" name="size" value="85" checked><span>Classic<small>Sample</small></span></label><label><input type="radio" name="size" value="125"><span>Full<small>+$40</small></span></label><label><input type="radio" name="size" value="185"><span>Grand<small>+$100</small></span></label></div></fieldset>
+        <label>2. Flower color<select name="color"><option>Blush pink</option><option>Classic red</option><option>White & cream</option><option>Tinted color — price pending</option></select></label>
+        <label>3. Wrapping color<select name="wrap"><option>Florist’s choice</option><option>Soft blush</option><option>Ivory</option><option>Black</option></select></label>
+        <fieldset><legend>4. Add a detail</legend><label class="check-option"><input type="checkbox" name="addon" value="15"> Personalized banner <span>+$15 sample</span></label><label class="check-option"><input type="checkbox" name="addon" value="8"> Handwritten card <span>+$8 sample</span></label></fieldset>
+        <label>5. Card or personalization message<textarea name="message" rows="2" maxlength="120" placeholder="Enter the message exactly as it should appear"></textarea><small class="field-help">Character limit and approval rules pending</small></label>
+        <div class="fulfillment-choice"><label><input type="radio" name="fulfillment" value="Delivery" checked> Delivery</label><label><input type="radio" name="fulfillment" value="Pickup"> Pickup</label></div>
+        <label>6. Requested date<input type="date" name="date"></label>
+        <button class="button button-dark" type="submit">Add to bag · <span id="addPrice">$85</span></button>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="checkout-dialog" id="checkoutDialog">
+    <button class="close-button dialog-close" id="closeCheckout" aria-label="Close checkout preview">×</button>
+    <p class="eyebrow">Checkout flow preview</p>
+    <h2>Clear details before payment</h2>
+    <div class="checkout-steps"><span class="active">1 Bag</span><span>2 Delivery</span><span>3 Payment</span><span>4 Confirmation</span></div>
+    <div class="checkout-placeholder"><p>The production checkout will collect the approved recipient, delivery/pickup, billing, and order details before sending the customer to a secure hosted payment screen.</p><strong>No card information is collected in this wireframe.</strong></div>
+    <button class="button button-dark" id="finishPreview">Finish preview</button>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

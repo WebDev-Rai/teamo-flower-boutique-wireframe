@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: teamo-flower-wireframe
+    runtime: static
+    buildCommand: echo "No build required"
+    staticPublishPath: ./docs
